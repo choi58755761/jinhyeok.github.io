@@ -3,143 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>최진혁 자기소개</title>
+    <title>최진혁의 홈페이지</title>
     <style>
         :root {
-            --main-red: #ff3b30;
-            --bg-gray: #f8f9fa;
-            --card-white: #ffffff;
-            --text-dark: #333;
-            --text-gray: #666;
+            --point-red: #e63946;
+            --soft-red: #fff1f2;
+            --text-black: #1d1d1f;
+            --text-gray: #424245;
         }
 
         body { 
-            font-family: 'Malgun Gothic', sans-serif; 
-            background-color: var(--bg-gray); 
-            color: var(--text-dark); 
-            margin: 0; 
-            padding: 40px 20px;
+            font-family: 'Pretendard', 'Malgun Gothic', sans-serif; 
+            line-height: 1.8; 
+            max-width: 750px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: #fcfcfc; 
+            color: var(--text-black); 
+        }
+
+        header { 
+            background: var(--point-red); 
+            color: #fff; 
+            padding: 3rem 2rem; 
+            text-align: center; 
+            border-radius: 24px; 
+            margin-bottom: 40px;
+            box-shadow: 0 10px 20px rgba(230, 57, 70, 0.15);
+        }
+        header h1 { margin: 0; font-size: 2rem; letter-spacing: -1px; }
+        header p { margin: 10px 0 0; opacity: 0.9; font-weight: 300; }
+
+        section { 
+            background: #fff; 
+            margin-bottom: 30px; 
+            padding: 35px; 
+            border-radius: 24px; 
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        h2 { 
+            color: var(--point-red); 
+            font-size: 1.4rem; 
+            margin-top: 0; 
+            margin-bottom: 20px; 
             display: flex;
-            flex-direction: column;
             align-items: center;
+            gap: 10px;
         }
 
-        /* 상단 타이틀 */
-        .page-title { text-align: center; margin-bottom: 40px; }
-        .page-title h1 { font-size: 2.2rem; margin-bottom: 5px; color: #1a1a1a; }
-        .page-title p { color: var(--text-gray); font-size: 1rem; }
+        p { margin: 12px 0; font-size: 1.05rem; color: var(--text-gray); }
 
-        /* 카드 공통 스타일 */
-        .card {
-            background: var(--card-white);
-            width: 100%;
-            max-width: 700px;
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        .highlight { color: var(--point-red); font-weight: 700; }
+        strong { color: var(--text-black); }
+
+        .exp-box {
+            background-color: var(--soft-red);
+            padding: 20px;
+            border-radius: 16px;
+            border-left: 5px solid var(--point-red);
+            margin-top: 15px;
         }
 
-        /* 메인 프로필 카드 */
-        .profile-header { display: flex; align-items: center; gap: 25px; }
-        .avatar {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, #ff6b6b, #ff3b30);
-            border-radius: 50%;
+        .skill-list {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2rem;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(255, 59, 48, 0.3);
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
         }
-        .profile-info h2 { margin: 0; font-size: 1.6rem; }
-        .profile-info .sub { color: var(--main-red); font-weight: bold; margin-bottom: 10px; }
-        .profile-info .desc { color: var(--text-gray); line-height: 1.5; font-size: 0.95rem; }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin-top: 25px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-            gap: 15px;
-        }
-        .info-item label { display: block; color: #aaa; font-size: 0.8rem; margin-bottom: 3px; }
-        .info-item span { font-weight: bold; font-size: 1rem; }
-
-        /* 섹션 제목 */
-        h3 { font-size: 1.3rem; margin-top: 0; margin-bottom: 15px; border-left: 5px solid var(--main-red); padding-left: 12px; }
-
-        /* 관심 분야 태그 */
-        .tag-container { display: flex; flex-wrap: wrap; gap: 10px; }
-        .tag {
-            background: #fff0f0;
-            color: var(--main-red);
-            padding: 8px 16px;
-            border-radius: 20px;
+        .skill-tag {
+            background: #eee;
+            padding: 5px 15px;
+            border-radius: 10px;
             font-size: 0.9rem;
-            font-weight: bold;
+            font-weight: 600;
         }
 
-        footer { text-align: center; color: #bbb; font-size: 0.85rem; margin-top: 20px; }
+        footer { 
+            text-align: center; 
+            color: #b0b0b0; 
+            margin-top: 60px; 
+            font-size: 0.9rem; 
+        }
     </style>
 </head>
 <body>
 
-    <div class="page-title">
-        <h1>최진혁 자기소개</h1>
-        <p>카드형 스타일 포트폴리오</p>
-    </div>
+    <header>
+        <h1>열정적인 신입생, 최진혁입니다</h1>
+        <p>2026학년도 한국기술교육대학교 컴퓨터공학계열 신입생</p>
+    </header>
 
-    <div class="card">
-        <div class="profile-header">
-            <div class="avatar">JH</div>
-            <div class="profile-info">
-                <h2>최진혁</h2>
-                <div class="sub">한국기술교육대학교 신입생</div>
-                <div class="desc">안녕하세요, 2026년도 한기대 신입생 최진혁입니다. 사람들과 소통하는 것을 좋아하며, 기술을 통해 일상의 효율을 높이는 프로그래밍에 관심이 많습니다.</div>
-            </div>
+    <section>
+        <h2>🙋‍♂️ 자기소개: 개성 있는 조립가</h2>
+        <p>안녕하세요! <strong>2026년도 한국기술교육대학교 신입생 최진혁</strong>입니다.</p>
+        <p>저는 멀리서도 한눈에 띄는 <span class="highlight">심한 곱슬머리</span>만큼이나 강한 개성을 가지고 있습니다. 제가 가장 좋아하는 색상인 <span class="highlight">빨간색</span>처럼 언제나 열정적으로 새로운 환경에 도전하는 것을 즐깁니다.</p>
+        <p>무엇보다 사람들과 대화하고 소통하며 에너지를 얻는 성격이며, 맛있는 <span class="highlight">초밥</span>을 먹으며 친구들과 함께 노는 시간이 저에게는 가장 큰 행복입니다.</p>
+    </section>
+
+    <section>
+        <h2>💡 관심분야: 모델링부터 AI까지</h2>
+        <p>저는 단순히 코드를 짜는 것을 넘어, 전체적인 구조를 잡는 <strong>모델링</strong>에 깊은 애정이 있습니다. 어릴 적부터 레고나 프라모델을 조립하며 무언가를 완성해 나가는 과정에 흥미를 느껴왔고, 이제는 그 무대를 디지털 세상으로 옮기려 합니다.</p>
+        <p>최근에는 <strong>프로그래밍</strong>과 <strong>AI</strong> 기술을 어떻게 모델링에 접목할 수 있을지 고민하고 있으며, 이를 통해 더 지능적인 시스템을 직접 설계해 보고 싶습니다.</p>
+        <div class="skill-list">
+            <div class="skill-tag">#3D_Modeling</div>
+            <div class="skill-tag">#C_Language</div>
+            <div class="skill-tag">#Python_AI</div>
+            <div class="skill-tag">#Problem_Solving</div>
         </div>
-        <div class="info-grid">
-            <div class="info-item"><label>특징</label><span>심한 곱슬머리</span></div>
-            <div class="info-item"><label>전공</label><span>컴퓨터공학계열</span></div>
-            <div class="info-item"><label>좋아하는 음식</label><span>초밥</span></div>
-            <div class="info-item"><label>좋아하는 색상</label><span>빨간색</span></div>
+    </section>
+
+    <section>
+        <h2>📂 포트폴리오 및 경험</h2>
+        <div class="exp-box">
+            <p><strong>CodeUp C언어 기초 100제 완독</strong></p>
+            <p style="font-size: 0.95rem;">프로그래머의 기본인 논리적 사고를 기르기 위해 스스로 도전했습니다. 단순히 정답을 맞히는 것에 그치지 않고, 가장 효율적인 코드를 고민하며 100문제를 모두 해결했습니다.</p>
         </div>
-    </div>
+        <p style="font-size: 0.95rem; color: #888; margin-top: 15px;">* 이 외에도 다양한 조립 및 제작 취미를 통해 설계 감각을 익혀왔습니다.</p>
+    </section>
 
-    <div class="card">
-        <h3>About Me</h3>
-        <p>저는 무언가를 직접 만들거나 조립하는 과정에서 큰 흥미를 느낍니다. 특히 모델링을 통해 구조를 설계하고, 이를 프로그래밍으로 실현하는 과정을 즐깁니다. 소통과 협업을 통해 함께 성장하는 개발자가 되고 싶습니다.</p>
-    </div>
-
-    <div class="card">
-        <h3>관심 분야</h3>
-        <div class="tag-container">
-            <div class="tag">모델링</div>
-            <div class="tag">프로그래밍</div>
-            <div class="tag">AI (인공지능)</div>
-            <div class="tag">효율적인 문제해결</div>
-        </div>
-    </div>
-
-    <div class="card">
-        <h3>경험 및 목표</h3>
-        <p><strong>CodeUp C언어 기초 100제 풀이</strong></p>
-        <p style="color: var(--text-gray); font-size: 0.95rem;">프로그래밍의 기초를 다지기 위해 100문제를 완독하며 논리적 사고력을 키웠습니다.</p>
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
-        <p>나의 대학생활 목표는 컴퓨터와 친해져서 <strong>내가 귀찮아하는 모든 것들을 효율적인 기술로 해결하는 능력</strong>을 갖추는 것입니다.</p>
-    </div>
+    <section>
+        <h2>🎓 대학생활의 목표</h2>
+        <p>저의 대학생활 목표는 명확합니다. <strong>"기술로 삶을 단순화하는 것"</strong>입니다.</p>
+        <p>컴퓨터와 더 깊게 친해져서 제가 평소에 귀찮아하는 사소한 불편함들을 <strong>효율적인 기술적 해결책</strong>으로 바꾸고 싶습니다. 한기대에서의 4년 동안 저만의 기술적 도구들을 하나씩 조립해 나갈 예정입니다.</p>
+    </section>
 
     <footer>
-        &copy; 2026 Choi Jin Hyuk · Personal Intro Page
+        <p>&copy; 2026 최진혁 | KOREATECH Computer Science</p>
     </footer>
-
-</body>
-</html></footer>
 
 </body>
 </html>
